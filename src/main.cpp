@@ -178,7 +178,7 @@ int main() {
         	  int appropriate_lane = -1;
 
               double s_max = car_s + 15;
-              double s_min = car_s - 15;
+              double s_min = car_s - 30;
 
               for(int j=0; j<possible_lanes.size(); j++)
               {
@@ -231,7 +231,7 @@ int main() {
           //Adjust the speed
           if (velocity_override)
           {
-			  target_velocity -= 3 * velocity_increment;
+			  target_velocity -= 5 * velocity_increment;
 			  velocity_override = false;
           }
           else if(target_velocity < max_target_velocity)
